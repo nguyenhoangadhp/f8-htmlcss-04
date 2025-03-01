@@ -19,6 +19,8 @@ button {
     font-family: inherit;
 }
 
+/* Common */
+
 a {
     text-decoration: none;
 }
@@ -30,4 +32,64 @@ h4,
 h5,
 h6 {
     font-family: "Sora", serif;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 130px;
+    --height: 56px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 999px;
+    border: 1px solid rgba(0, 9, 88, 1);
+    color: #000958;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* Header */
+body {
+    background: #fffaf5;
+}
+.header-wrap {
+    padding: 26px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fffaf5;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item__link,
+.header-action__link {
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0 18px;
+    transition: all 0.25s;
+}
+
+.nav-item__link:hover,
+.header-action__link:hover {
+    color: #000958;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action__btn {
+    --height: 50px;
+    min-width: 118px;
+}
+
+.header-action__btn:hover {
+    opacity: 0.8;
 }
